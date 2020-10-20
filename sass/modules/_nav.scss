@@ -1,0 +1,62 @@
+#mainHeader {
+    background-color: #EFF3F8;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    max-width: 1200px;
+    min-width: 320px;
+}
+
+#logo {
+    display: block;
+    font-size: 16px;
+    padding: 20px;
+    float: left;
+
+}
+
+#logo img {
+    width: 65%;
+
+}
+
+#mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+#mainNav ul li {
+    cursor: pointer;
+}
+
+#mainNav ul li a {
+    margin-top: 20px;
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+#mainNav ul li a:hover {
+    color:black;
+
+}
+
+.current {
+    color: pink;
+}
+
+.menuBtn:hover {
+    color: pink;
+}
+
+.menu {
+    clear: both;
+}
+
