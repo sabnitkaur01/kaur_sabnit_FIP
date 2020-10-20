@@ -1,0 +1,15 @@
+body { font-family: Arial, Helvetica, sans-serif;
+        font-size:  18px;
+        background-color: #EFF3F8;}
+
+@mixin roundCorners ($radius) {
+    border-radius: $radius;
+}
+
+@mixin addPadding($values...) {
+    @each $var in $values {
+        padding: $var;
+    }
+    
+}
+    
