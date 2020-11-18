@@ -14,19 +14,22 @@ a {
 }
 
 header {
-    background: #949BA6;
+    background: #fff;
     background-size: cover;
     background-position: center center;
     height: 100vh;
     text-align: center;
-    color: #fff;
+    color: black;
 
 }
 
 img {
-    size: 2em;
-    display: block;
+   
+    border: 0; 
+    display: inline-block;
+    position: relative;
     padding-top: 30px;
+    width: 300px;
 
 }
 
@@ -47,10 +50,15 @@ ul {
 }
 
 h1 {
-    font-size: 45em;
+    font-size: 2em;
+    font-weight: bold;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%);
+    top: 30%;
+    // transform: translate(-50%);
     width: 100%;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
+}
+
+p {
+    margin-top: 60px;
 }

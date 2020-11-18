@@ -1,0 +1,150 @@
+
+
+// mobile version
+
+#mainFooter {
+    margin: 10px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.box1 h4 {
+    font-size: 18px;
+}
+
+.box2 p {
+    line-height: 18px;
+}
+
+.box3 label {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+.box3 input {
+    // background-color: #191919;
+    background-color: white;
+}
+
+.Email {
+    position: relative;
+    width: 200px;
+}
+
+input {
+    border: none;
+    border-bottom: solid 2px black;
+    width: 180px;
+    color: grey;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#submit1 {
+    border: solid 2px black;
+    width: 70px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#submit1:hover {
+    color: white;
+
+
+    background: grey;
+    
+  }
+
+.socialIcon h4{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+.socialIcon ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.socialIcon ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+.socialIcon ul li a {
+    padding: 11px;
+}
+
+.copyright h5 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+// mobile version end
+
+
+
+
+
+
+
+// Desktop version
+@media screen and (min-width:938px) {
+
+    #mainFooter{
+        // padding-bottom: 30px;
+        // margin: 10px 0px 0px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .box1, .box2, .box3 {
+        width: 150px;
+        margin-right: 40px;
+    }
+
+    .socialIcon {
+        display: grid;
+        justify-content: center;
+        text-align: left;
+    }
+    .socialIcon h4{
+        display: inherit;
+    }
+}
+
+// desktop version end
+
+// tablet version
+@media screen and (min-width: 768px) {
+    
+    .socialIcon {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .socialmedia h4 {
+        display: none;
+    }
+}
+
+// tablet version end
+
