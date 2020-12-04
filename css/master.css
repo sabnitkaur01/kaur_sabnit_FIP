@@ -83,7 +83,7 @@ input {
 #submit1:hover {
   cursor: pointer;
   color: black;
-  background: pink;
+  background: #ffc0cb;
 }
 
 .socialIcon {
@@ -207,22 +207,17 @@ div, p, body, header, section, article, nav {
 @media screen and (min-width: 768px) {
   body {
     background-color: white;
-    background-position: center center;
   }
 }
 @media screen and (min-width: 938px) {
   body {
     background-color: white;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
   }
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: white;
-  background-position: center center;
 }
 
 div, p, body, header, footer, section, article, nav {
@@ -264,7 +259,7 @@ a {
 
 .Sitecontainer {
   margin: 0 auto;
-  background-color: pink;
+  background-color: #ffc0cb;
   color: #fff;
   max-width: 1200px;
   min-width: 320px;
@@ -443,26 +438,35 @@ a {
 }
 
 /* Header End here */
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Can all be looked up and explained with: http://docs.panic.com/#css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  background-position: center center;
   font: inherit;
+  /*causes the element for which it is specified to take the Computed value of the property from its parent element.*/
   vertical-align: baseline;
+  /*Align the baseline of the element with the baseline of its parent.*/
 }
 
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -476,40 +480,164 @@ ol, ul {
   list-style: none;
 }
 
+/*Removes quotes from q tag and blockquote tag*/
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
 
+/*In the collapsed border model, adjacent table cells share borders.*/
+/*http://docs.panic.com/#css/border-collapse*/
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-body {
-  -webkit-text-size-adjust: none;
+.hidden {
+  display: none;
 }
 
-mark {
-  background-color: transparent;
-  color: inherit;
-}
-
-input::-moz-focus-inner {
-  border: 0;
+* {
+  border: none;
   padding: 0;
+  margin: 0;
 }
 
-input, select, textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
+#miniApp {
+  margin: 0 auto;
+  display: block;
+  max-width: 1200px;
+  padding: 10px;
 }
 
+.mainBox {
+  width: 300px;
+  padding: 30px;
+  display: flex;
+}
+
+.header {
+  margin-top: 40px;
+  color: black;
+  font-size: 30px;
+  text-transform: inherit;
+  font-weight: bold;
+}
+.header h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.info {
+  width: 10px;
+  padding-top: -10px;
+  text-align: left;
+  margin-top: -30px;
+}
+
+.info h2 {
+  font-size: 25px;
+  margin-top: 110px;
+  color: #0d4172;
+}
+
+.info p {
+  font: outline;
+  font-family: initial;
+  margin-top: 20px;
+  padding-right: 40px;
+}
+
+.info img {
+  align-self: right;
+}
+
+.imgArea {
+  display: flex;
+  flex-direction: column-reverse;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.imgArea img {
+  width: 200px;
+}
+
+@media (min-width: 470px) {
+  .imgArea img {
+    width: 170px;
+  }
+
+  .info img {
+    width: 140px;
+  }
+}
+@media (min-width: 650px) {
+  .imgArea img {
+    width: 190px;
+  }
+
+  .info {
+    padding-bottom: -600px;
+  }
+
+  .info img {
+    width: 260px;
+  }
+
+  .info h2 {
+    margin: 20px;
+    font-size: 29px;
+    margin-top: 90px;
+  }
+
+  .info p {
+    margin: 20px;
+    font-size: 20px;
+    width: 60%;
+    align-self: right;
+  }
+
+  .header h2 {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .imgArea img {
+    width: 400px;
+  }
+
+  .info img {
+    width: 300px;
+  }
+
+  .info h2 {
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+
+  .info p {
+    font-size: 25px;
+    align-self: left;
+  }
+
+  .header h2 {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
 #intro {
   background-image: url(../images/study.png);
   background-position: center center;
@@ -698,6 +826,59 @@ input, select, textarea {
     font-size: 17px;
     width: 310px;
   }
+}
+label {
+  display: block;
+  margin: 1.5em 0 0.3em;
+  padding-left: 0.4em;
+}
+label:first-of-type {
+  margin-top: 0;
+}
+
+input[type=text], input[type=email], textarea {
+  padding: 0.6em;
+  color: #333;
+  border-radius: 4px;
+  width: 250px;
+}
+
+textarea {
+  resize: none;
+  display: block;
+}
+
+.submit-wrapper {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #78abeb;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: white;
+}
+.submit-wrapper:hover {
+  background-color: #5588c8;
+}
+.submit-wrapper span {
+  padding-right: 0.5em;
+}
+
+main {
+  padding: 20px;
+}
+main h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+main hr {
+  width: 80%;
+  margin: 40px 0;
+}
+main p {
+  max-width: 75%;
 }
 
 /*# sourceMappingURL=master.css.map */

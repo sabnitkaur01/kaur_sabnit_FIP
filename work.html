@@ -6,7 +6,7 @@
     <title>Protfolio Site</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
 
 </head>
@@ -37,13 +37,32 @@
 
 
 
-        <div class="content">
-            <p>
-                psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i psum dolor sit amet, consectetur adipisicing elit. Facilis quae recusandae nulla autem corrupti minima delectus repellendus tempore eveniet quasi quis, sit quidem nobis corporis voluptatibus a, laudantium blanditiis similique.Lorem i
-            </p>
-
-        </div>
-
+        <main id="miniApp">
+            <div class="header">
+    
+               <h2>See My Work!</h2>
+            </div>
+    
+            <figure class="mainBox">
+    
+                <section class="info hideinfo" :class="{'show-info' : show_info}">
+                    
+                    <h2>{{currentCarData.name}}</h2>
+                    <p>{{currentCarData.about}}</p>
+    
+                    <img :src="'images/' + currentCarData.image" alt="">
+    
+                </section>
+    
+                <section class="imgArea">
+    
+                    <img-area @showmyInfo="imgAreaSelected" 
+                    v-for="car in carImg" :car="car" :key="car.id"></img-area>
+    
+                </section>    
+            </figure>
+            
+        </main>
 
 
     <footer id="mainFooter">
@@ -90,13 +109,9 @@
 
 </div>
 
-
-
-
-
+   
     
-    
-<script src="js/main.js"></script>
+<script defer type="modules" src="js/main.js"></script>
 
 </body>
 </html>
