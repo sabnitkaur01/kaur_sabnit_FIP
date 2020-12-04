@@ -1,6 +1,8 @@
 body { font-family: Arial, Helvetica, sans-serif;
         font-size:  18px;
-        background-color: #EFF3F8;}
+        background-color: white;
+        // background-position: center center;
+    }
 
 @mixin roundCorners ($radius) {
     border-radius: $radius;

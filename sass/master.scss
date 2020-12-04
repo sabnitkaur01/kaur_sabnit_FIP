@@ -4,6 +4,13 @@
 
 @import 'modules/mixin';
 @import 'modules/_nav.scss';
-@import 'modules/vars';
+@import 'modules/reset.scss';
 
+@import 'modules/vars.scss';
+@import 'modules/work.scss';
+@import 'modules/home.scss';
+@import 'modules/mail.scss';
+
+
+@import 'modules/contactMain.scss';
 

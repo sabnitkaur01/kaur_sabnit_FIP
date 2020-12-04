@@ -4,5 +4,22 @@ $main-font-size: 18px;
 $header-size: 2em;
 
 $main-text-color:  #EFF3F8;
-$main-bg-color: #949BA6;
+$main-bg-color: pink;
 
+
+.hidden { display: none; }
+
+$main-bg-color: #333;
+$main-color: white;
+
+$main-font-face: 'arial', 'helvetica', sans-serif;
+$main-font-size: 16px;
+
+$heading-color: rgba(255, 255, 255, 0.5);
+
+// quick reset
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}

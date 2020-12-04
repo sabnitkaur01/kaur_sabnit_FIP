@@ -1,4 +1,24 @@
 @media screen and (min-width: 320px) {
-    body { background-color: #949BA6;
+    body { background-color: white;
+        background-position: center center;
     }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+
+    
+    background-color: white;
+    // background-position: center center;
+
+    }
+}
+
+@media screen and (min-width: 938px) {
+    body {
+
+    
+        background-color: white;
+        
+        }
 }

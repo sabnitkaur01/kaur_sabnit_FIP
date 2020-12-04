@@ -6,12 +6,112 @@
     <title>Protfolio Site</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
-    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
 
 </head>
 <body>
 
+
+    <div class="siteContainer">
+     <header id="mainHeader">
+        <nav id="mainNav">
+        <div id="logo"><a href="#"><img src="images/logo.svg" alt="Logo" width="120"></a></div><!-- Close logo-->
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+  
+        <h2 class="hidden">Main navigation</h2>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="current">Work </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+         </nav><!-- Close mainNav -->
+  
+        </header>
+
+
+       
+
+
+
+        <main id="miniApp">
+            <div class="header">
     
+               <h2>See My Work!</h2>
+            </div>
+    
+            <figure class="mainBox">
+    
+                <section class="info hideinfo" :class="{'show-info' : show_info}">
+                    
+                    <h2>{{currentCarData.name}}</h2>
+                    <p>{{currentCarData.about}}</p>
+    
+                    <img :src="'images/' + currentCarData.image" alt="">
+    
+                </section>
+    
+                <section class="imgArea">
+    
+                    <img-area @showmyInfo="imgAreaSelected" 
+                    v-for="car in carImg" :car="car" :key="car.id"></img-area>
+    
+                </section>    
+            </figure>
+            
+        </main>
+
+
+    <footer id="mainFooter">
+            <div class="box1">
+                <h4>@2019-2020</h4>
+            </div> 
+           
+
+            <div class="box2">
+                <h4>Contact</h4>
+                <p>  Email:Sabnitkaur01@gmail.com <br> 
+                phone: 2348484420</p>
+            </div>
+
+
+            <div class="box3">
+                <form id="Email" action="form.php" method="POST">
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" size="31" placeholder="Enter your email">
+                    <span class="bar"></span>
+                    <input id="submit1" type="submit" value="Submit">
+                    
+                </form>
+            </div>
+
+
+
+
+            <div class="socialIcon">
+                <h4> Social Media</h4>
+                <ul id="socialmedia">
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="images/Youtube.png" alt="Youtube Icon"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+
+                <div class="copyright">
+                    <h5>All Rights Reserved</h5>
+                </div>
+            </div>
+
+    </footer> 
+
+</div>
+
+   
+    
+<script defer type="modules" src="js/main.js"></script>
+
 </body>
 </html>

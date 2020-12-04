@@ -1,9 +1,16 @@
 // css documents goes here
-div, p, body, header, footer, section, article, nav {
+div, p, body, header, section, article, nav {
     margin: 0;
     padding: 0;
+    background-position: center center;
 }
 
+@media screen and (min-width: 320px) {
+    body {
+      background-color: white;
+      background-position: center center;
+    }
+  }
 
 // html selectors are here
 
@@ -12,33 +19,13 @@ div, p, body, header, footer, section, article, nav {
     display: none;
 }
 
+.Sitecontainer {
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+}
 
-// a:link, a:visited {
-//     text-decoration: none;
-// }
-
-// a:hover, a:active {
-//     text-decoration: none;
-// }
-
-
-// a {
-//     cursor: pointer;
-//     color: #818384;
-
-// }
-
-// .siteContainer {
-//     margin: 0 auto;
-//     background-color: #EFF3F8;
-//     color: #818384;
-//     min-width: 320px;
-//     max-width: 1200px;   
-// }
-// #logo {
-//     font-size: 16px;
-//     padding: 20px;
-//     display: block;
-//     float: left;
+// body {
+//   background-position: center center;
 // }
 
