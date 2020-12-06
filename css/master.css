@@ -543,7 +543,7 @@ table {
 }
 
 .info h2 {
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 110px;
   color: #0d4172;
 }
@@ -557,6 +557,9 @@ table {
 
 .info img {
   align-self: right;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 0px;
 }
 
 .imgArea {
@@ -593,6 +596,7 @@ table {
 
   .info img {
     width: 260px;
+    margin-left: 20px;
   }
 
   .info h2 {
