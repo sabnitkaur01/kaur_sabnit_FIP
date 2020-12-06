@@ -38,31 +38,30 @@
 
 
         <div class="content">
-            <main>
+            <main class="con">
                 <h1 class="hidden">Mail Reference for API Processing</h1>
-                <h2>Some Generic Contact Message Here</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae aliquid eaque numquam facere ratione molestiae temporibus quibusdam, dolor voluptatibus cupiditate sed error expedita assumenda. Vitae nulla recusandae minima inventore?
+                    KEEP IN TOUCH!
                 </p>
         
                 <hr class="separator">
         
-                <h2 class="mail-header">Processing Mail with AJAX</h2>
+                <h2 class="mail-header">Looking for your support!</h2>
         
                 <form action="./includes/mail/send.php" method="POST" id="mail-form">
                     <!-- drop down starts from here -->
                     <label for="dropDown"> 
-                        Drop Down Menu
+                        Choose Your City
                     </label>
         
         
         
                     <select name="Choose" id="dropDown">
                         <option value="">Choose</option>
-                        <option value="ABC">ABC</option>
-                        <option value="DEF">DEF</option>
-                        <option value="GHI">GHI</option>
-                        <option value="JKL">KLM</option>
+                        <option value="ABC">London</option>
+                        <option value="DEF">Toronto</option>
+                        <option value="GHI">Brampton</option>
+                        <option value="JKL">Montreal</option>
         
                     </select>
         
@@ -70,26 +69,28 @@
         
         
                     <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required>
         
                     <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
         
         
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="email" required>
+                    <label for="Email"> Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
         
                     <label for="message">Your Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
         
                     <div class="submit-wrapper">
-                        <span class="submit">Submit</span>
-                        <i class="fas fa-paper-plane"></i>
+                        <input type="submit" id="send" value="Send">
+                        <!-- <i class="fas fa-paper-plane"></i> -->
                     </div>
         
                 </form>
             </main>
         
+                
+     
 
         </div>
 
@@ -111,7 +112,7 @@
             <div class="box3">
                 <form id="Email" action="form.php" method="POST">
                     <label for="email">Email</label>
-                    <input type="email" required id="email" size="31" placeholder="Enter your email">
+                    <input type="enquiry" required id="enquiry" size="31" placeholder="Enter your enquiry">
                     <span class="bar"></span>
                     <input id="submit1" type="submit" value="Submit">
                     
@@ -125,7 +126,7 @@
                 <h4> Social Media</h4>
                 <ul id="socialmedia">
                     <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a></li>
-                    <li><a href="https://www.youtube.com/"><img src="images/Youtube.png" alt="Youtube Icon"></a></li>
+                    <!-- <li><a href="https://www.youtube.com/"><img src="images/Youtube.png" alt="Youtube Icon"></a></li> -->
                     <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon"></a></li>
                     <li><a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter Icon"></a></li>
                 </ul>
@@ -147,6 +148,7 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
     
 <script  defer type="components" src="js/contact.js"></script>
+<script  defer type="components" src="js/main.js"></script>
 
 </body>
 </html>

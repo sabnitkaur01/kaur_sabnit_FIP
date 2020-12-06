@@ -1,7 +1,7 @@
 label { 
     display: block;
     margin: 1.5em 0 0.3em;
-
+    color: black;
     padding-left: 0.4em;
 
     &:first-of-type {
@@ -14,23 +14,32 @@ input[type=text], input[type=email], textarea {
     color: #333;
     border-radius: 4px;
     width: 250px;
+    display: inline;
 }
 
-textarea { resize: none; display: block; }
+textarea { resize: none; display: inline; display: inline; border: solid 2px black;
+    padding-left: 30px;
+    margin-left: 190px;
+
+}
 
 
 
 .submit-wrapper {
     display: inline-block;
+    // flex-direction: column;
     margin-top: 2em;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
-    background-color: #78abeb;
+    background-color: grey;
     cursor: pointer;
     font-size: 1.2em;
     color: white;
+    text-align: center;
+    margin-left: 30px;
 
-    &:hover { background-color: #5588c8}
+
+    &:hover { background-color: palevioletred}
 
     span { padding-right: 0.5em; }
 }
@@ -39,3 +48,100 @@ textarea { resize: none; display: block; }
 //     background-color: pink;
 //     left: 50%;
 // }
+
+h2 {
+    color: #0d4172;
+    
+}
+
+.con p {
+    color:#0d4172;
+    text-align: inherit;
+    margin-left: 140px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+.con {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width: 320px) { 
+
+    
+    .con p {
+
+        margin-left: 60px;
+    }
+
+    textarea { 
+    
+        margin-left: 10px;
+    
+    }
+
+}
+
+
+@media (min-width: 470px) { 
+    .con p {
+
+        margin-left: 70px;
+    }
+    
+    textarea { 
+    
+        margin-left: 140px;
+    
+    }
+}
+
+@media (min-width: 500px) { 
+
+    // .con p {
+
+    //     margin-left: 120px;
+    // }
+
+    
+    textarea { 
+    
+        margin-left: 50.4px;
+    
+    }
+
+}
+
+
+@media (min-width: 650px) {
+
+
+.con p {
+
+    margin-left: 110px;
+}
+
+textarea { 
+
+    margin-left: 110px;
+
+}
+
+}
+
+@media (min-width: 1200px) { 
+
+
+.con p {
+
+    margin-left: 130px;
+}
+
+textarea { 
+
+    margin-left: 140px;
+
+}
+}
