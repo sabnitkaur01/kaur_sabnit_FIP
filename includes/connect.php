@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost',
-        'dbname' => 'Final',
+        'dbname' => 'protfolio',
         'charset' => 'utf8'
     );
 
@@ -9,8 +9,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = 'root'; // windows users leave this blank
+    $db_user = 'sabnit';
+    $db_pass = 'Sabnit123!'; // windows users leave this blank
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);

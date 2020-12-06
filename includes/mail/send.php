@@ -123,39 +123,5 @@ if ($email_result) {
 
 
 
-// if (empty($visitor_name)  || empty($visitor_email) || empty($visitor_message)) {
-//     header("Location: ../index.php?signup=empty");
-//     exit();
-
-// } 
-// else {
-
-//     //check if input characters are valid
-//     if (!preg_match("/^[a-zA-Z]*$visitor_name") ||
-//     !preg_match("/^[a-zA-Z]*$visitor_message")) {
-//         header("Location: ../index.php?signup=empty");
-//         exit();
-
-//     } else {
-//         //check if email is valid
-//         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//             header("Location: ../index.php?signup=email");
-//             exit();
-
-//         } else {
-//             header("Location: ../index.php?signup=success");
-//             exit();
-//         }
-        
-//     }
-
-//} 
-
-// else {
-//     header("location: ../index.html");
-//     exit();
-// }
-
-
 echo json_encode($results);
 
