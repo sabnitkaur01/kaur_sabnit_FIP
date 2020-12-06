@@ -5,7 +5,7 @@
     $result = array();
 
     function getAllUsers($conn) {
-        $query = "SELECT * FROM car_info";
+        $query = "SELECT * FROM tbl_fip";
 
         $runQuery = $conn->query($query);
 
@@ -18,7 +18,7 @@
     }
 
     function getSingleUser($conn, $id) {
-        $query = "SELECT * FROM car_info WHERE id=" . $id . "";
+        $query = "SELECT * FROM tbl_fip WHERE id=" . $id . "";
 
         $runQuery = $conn->query($query);
 
